@@ -3,7 +3,6 @@
  * {
      margin: 0;
      padding: 0;
-     box-sizing: border-box;
  }
 
  body {
@@ -23,53 +22,40 @@
 */
  }
 
- /* Nawigacja */
  nav {
-     /*      Rozwiązanie na INLINE BLOCK (odstepy)*/
-     font-size: 0;
+     margin: 20px 0;
+     text-align: right;
+     /*     background-color: #ccc;
+     */
  }
 
  nav a {
-     display: inline-block;
-     width: 25%;
-     height: 40px;
-     font-size: 28px;
-     background-color: grey;
-     font-family: arial;
-     font-size: 18px;
+     display: inline-block font-size: 22px;
      text-decoration: none;
      text-transform: uppercase;
-     text-align: center;
-     color: white;
-     /*     padding: 10px 0;*/
-     line-height: 40px;
+     font-family: 'Roboto', sans-serif;
+     color: brown;
+     padding: 10px 20px;
+     margin: 0 5px;
  }
 
-
-
- nav a.btn1 {
-     background-color: burlywood;
- }
-
- nav a.btn2 {
-     background-color: deepskyblue;
- }
-
- nav a.btn3 {
-     background-color: darkcyan;
- }
-
- nav a.btn4 {
-     background-color: royalblue;
+ a.btn4 {
+     border: 2px solid brown;
+     margin-left: 100px;
+     margin-right: 50px;
+     transition: .4s;
+     letter-spacing: 2px;
  }
 
  nav a:hover {
-     border-bottom: 8px solid black;
-     color: black;
-     background-color: white;
+     border-bottom: 2px solid brown;
  }
 
- /* Header */
+ nav a.btn4:hover {
+     background-color: brown;
+     color: white;
+ }
+
  header {
      height: 300px;
      background-color: cadetblue
