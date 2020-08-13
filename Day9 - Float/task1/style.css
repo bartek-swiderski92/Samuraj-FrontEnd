@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+
+}
+
+nav div.logo {
+    width: 20vw;
+    margin-right: 10vw;
+    height: 40px;
+    background-color: brown;
+    float: left;
+}
+
+nav ul {
+    height: 40px;
+    width: 70vw;
+    background-color: darkcyan;
+    float: left;
+    list-style: none;
+
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+
+}
+
+nav ul li a {
+    display: block;
+    font-size: 20px;
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    transition: .2s;
+}
+
+a:hover {
+    font-size: 26px;
+}
