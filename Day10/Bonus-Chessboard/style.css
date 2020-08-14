@@ -1,0 +1,31 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.board {
+    margin: 100px auto;
+    /*    box-sizing: border-box;*/
+    width: 400px;
+    border: 3px solid black;
+}
+
+.field {
+    height: 80px;
+    /*    width: 50px;*/
+    width: 20%;
+    float: left;
+}
+
+.field:nth-child(2n) {
+    background-color: black;
+}
+
+.field:nth-child(n/5) {
+    color: blue;
+}
+
+h1 {
+    text-align: center;
+}
