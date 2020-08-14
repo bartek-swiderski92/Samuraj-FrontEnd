@@ -63,6 +63,8 @@ nav {
 
 nav ul {
     list-style: none;
+    max-width: 1024px;
+    margin: 0 auto;
 
 }
 
@@ -98,7 +100,10 @@ main {
 }
 
 div.blog {
+    max-width: 1024px;
+    margin: 0 auto;
     margin-top: 40px;
+
 }
 
 article img {
@@ -119,12 +124,39 @@ article h1 {
 }
 
 aside {
-
-    background-color: darkseagreen;
     float: left;
-    width: 35%;
-    height: 200px;
+    width: 30%;
     margin-top: 0px
+}
+
+section.contact {
+    background-color: #ddd;
+    padding: 15px;
+}
+
+section.contact p {
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+section.contact ul {
+    list-style: none;
+}
+
+section.contact li {
+    margin: 10px 0;
+}
+
+section.contact li i {
+    margin-right: 20px;
+
+}
+
+section.news {
+    margin-top: 30px;
+    height: 300px;
+    background-color: #ddd;
+    padding: 15px;
 }
 
 footer {
