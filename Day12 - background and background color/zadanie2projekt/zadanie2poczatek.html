@@ -10,18 +10,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Przyciski</title>
-  <style>
-    /*    Określ własciwości przycisku*/
+    <meta charset="UTF-8">
+    <title>Przyciski</title>
+    <style>
+        /*    Określ własciwości przycisku*/
 
-    a {}
+        a.first {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            font-family: arial;
+            padding: 20px 60px 20px 100px;
+            background-image: url(emoticon1.png);
+            background-color: cornflowerblue;
+            background-repeat: no-repeat;
+            background-position: 20px;
+        }
 
-    a:hover {}
-  </style>
+        a:hover {
+            background-image: url(emoticon2.png)
+        }
+
+        a.second {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            font-size: 40px;
+            font-family: arial;
+            padding: 20px 60px 20px 100px;
+            background-image: url(emoticons.png);
+            background-color: cornflowerblue;
+            background-repeat: no-repeat;
+            transition: .5s;
+            background-position: 15px 4px;
+        }
+
+        a.second:hover {
+            background-image: url(emoticons.png);
+            background-position: 15px 110%;
+
+        }
+    </style>
 </head>
 
 <body>
-  <a href="#">Przycisk</a>
-</body>
-</html>
+    <a class="first" href="#">Przycisk</a>
+    <a class="second" href="#">Przycisk</a>
+</body></html>
