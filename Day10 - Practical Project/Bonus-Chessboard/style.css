@@ -22,9 +22,6 @@
     background-color: black;
 }
 
-.field:nth-child(n/5) {
-    color: blue;
-}
 
 h1 {
     text-align: center;
