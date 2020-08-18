@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    color: white;
+    font-family: arial, sans-serif;
+    font-size: 60px;
+}
+
+section.s1 {
+    background-color: darkcyan;
+}
+
+
+section.s2 {
+    background-color: royalblue;
+}
+
+section div {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+section h1 {
+    position: absolute;
+    transition: 1s;
+    top: 40%;
+
+}
+
+.s1 h1 {
+    left: -150%;
+}
+
+.s1 div:hover + h1 {
+    left: 10%;
+    color: red;
+}
+
+.s2 h1 {
+    left: 10%;
+    opacity: 0;
+}
+
+.s2 div:hover + h1 {
+    opacity: 1;
+}
+
+div {
+    cursor: pointer;
+}
