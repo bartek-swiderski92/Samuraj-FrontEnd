@@ -275,5 +275,37 @@ header button {
 }
 
 section {
-    min-height: 100vh
+    min-height: 30vh
+}
+
+/* Sekcja i nasze cechy */
+.features {
+    margin-top: 50px;
+    padding: 5%;
+    text-align: center;
+}
+
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.features h2 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.features p {
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.features img {
+    width: 100%;
+    margin: 5px 0;
 }
