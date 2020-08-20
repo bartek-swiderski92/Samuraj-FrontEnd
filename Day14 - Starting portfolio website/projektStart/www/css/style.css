@@ -9,6 +9,11 @@ font-family: 'Saira Condensed', sans-serif;
     box-sizing: border-box;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
 
 header {
     position: relative;
@@ -280,7 +285,8 @@ section {
 
 /* Sekcja i nasze cechy */
 .features {
-    margin-top: 50px;
+    max-width: 1600px;
+    margin: 30px auto 0;
     padding: 5%;
     text-align: center;
 }
@@ -308,4 +314,84 @@ section {
 .features img {
     width: 100%;
     margin: 5px 0;
+    max-width: 375px;
 }
+
+@media (min-width: 360px) {
+    .features h1 {
+        font-size: 28px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .features h1 {
+        font-size: 36px;
+        box-sizing: border-box
+    }
+
+    .features h2 {
+        font-size: 28px;
+    }
+
+    .features p {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .features {
+        margin-top: 20px;
+    }
+
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 2%;
+    }
+
+    .features h1 {
+        font-size: 40px;
+    }
+
+    .features h2 {
+        font-size: 36px;
+    }
+
+    .features p {
+        font-size: 24px;
+        line-height: 120%;
+        padding: 0 10px
+    }
+
+    @media (min-width: 1600px) {
+
+
+        .feature {
+            padding: 20px 40px;
+        }
+
+        .features h1 {
+            font-size: 40px;
+        }
+
+        .features h2 {
+            font-size: 36px;
+        }
+
+        .features p {
+            font-size: 24px;
+            line-height: 120%;
+            padding: 0 10px
+        }
+
+    }
