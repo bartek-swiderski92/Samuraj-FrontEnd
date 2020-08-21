@@ -279,8 +279,8 @@ header button {
     }
 }
 
-section {
-    min-height: 30vh
+footer {
+    min-height: 180vh
 }
 
 /* Sekcja i nasze cechy */
@@ -560,32 +560,97 @@ section {
     }
 }
 
+/*Sekcja Slogna*/
+.slogan {
+    text-align: center;
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.slogan h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+}
+
+.slogan p {
+    width: 90%;
+    font-family: 'saira', sans-serif;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slogan p.author {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.slogan .bg {
+    background-color: rgba(0, 63, 114, 0.2);
+    padding: 30px 10px;
+
+}
+
+@media (orientation: landscape) {
+    .slogan p {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .slogan .bg {
+        padding: 70px 10px;
+    }
+
+    .slogan h1 {
+        font-size: 48px;
+        margin-bottom: 35px;
+
+    }
+
+    .slogan p {
+        font-size: 26px;
+        width: 90%;
+
+    }
+
+    .slogan p.author {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
+    @media (min-width: 1024px) {
+        .slogan .bg {
+            padding: 100px 10px;
+        }
+
+        .slogan h1 {
+            font-size: 60px;
+            margin-bottom: 55px;
+
+        }
+
+        .slogan p {
+            font-size: 40px;
+            width: 50%;
+        }
+
+        .slogan p.author {
+            margin-top: 60px;
+            font-size: 26px;
+        }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
+        /**/
