@@ -279,9 +279,7 @@ header button {
     }
 }
 
-footer {
-    min-height: 180vh
-}
+
 
 /* Sekcja i nasze cechy */
 .features {
@@ -700,9 +698,22 @@ footer {
     text-align-last: center;
     line-height: 25vh;
     text-shadow: 2px 2px 2px black;
-    background-color: rgba(0, 0, 0, .2);
+    /*    background-color: rgba(0, 0, 0, .4);*/
     font-size: 20px;
+}
 
+
+
+@media (min-width: 435px) {
+    .hobby h1 {
+        font-size: 48px;
+        margin-top: 40px;
+        margin-bottom: 35px;
+    }
+
+    .hobby .item p {
+        font-size: 26px;
+    }
 }
 
 @media (min-width: 533px) {
@@ -717,18 +728,6 @@ footer {
     }
 }
 
-@media (min-width: 435px) {
-    .hobby h1 {
-        font-size: 48px;
-        margin-top: 40px;
-        margin-bottom: 35px;
-    }
-
-    .hobby .item p {
-        font-size: 32px;
-    }
-}
-
 @media (min-width: 1024px) {
     .hobby .item p {
         opacity: 0;
@@ -739,6 +738,8 @@ footer {
 
     .hobby .item:hover p {
         opacity: 1;
+        background-color: rgba(0, 0, 0, .4);
+
     }
 
     .hobby .item {
@@ -764,24 +765,146 @@ footer {
     }
 }
 
+/*Section contact*/
+
+.contact {
+    background-color: #000;
+    padding: 30px 20px;
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: white;
+    text-align: center;
+
+}
+
+.contact .wrap {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
 
 
+.contact input,
+.contact button,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 25px;
+    font-family: 'saira', sans-serif;
+    padding: 5px;
+    font-size: 12px;
+}
 
+.contact input {
+    height: 36px;
+}
 
+.contact textarea {
+    height: 120px;
+}
 
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
 
+.contact .socials {
+    padding-top: 30px;
+    font-size: 0;
+}
 
+.contact .social {
+    padding: 10px 0;
+    color: white;
+    font-family: 'Saira Condensed', sans-serif;
+}
 
+.contact .social img {
+    float: left;
+}
 
+.contact .social span {
+    float: left;
+    line-height: 72px;
+    padding-left: 20px;
+    font-size: 18px
+}
 
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
 
+@media (min-width: 1024px) {
 
+    .contact h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
 
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+    }
 
+    .contact .socials {
+        padding-top: 0px;
+    }
 
+    .contact .social {
+        display: block;
+        margin: 0 auto;
+        padding-top: 0;
+    }
 
+    .contact input,
+    .contact button,
+    .contact textarea {
+        margin-bottom: 35px;
+    }
 
+    .contact input {
+        height: 46px;
+        font-size: 24px;
+    }
 
+    .contact textarea {
+        height: 180px;
+        font-size: 24px;
+    }
+
+    .contact button {
+        font-size: 20px;
+        line-height: 50px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .contact button:hover {
+        color: black;
+        background-color: #fff;
+    }
+
+}
+
+footer {
+    background-color: #29a6dc;
+    color: white;
+    font-family: 'saira', sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px
+}
 
 
 
