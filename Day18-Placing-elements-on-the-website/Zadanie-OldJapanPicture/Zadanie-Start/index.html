@@ -1,0 +1,110 @@
+<!-- 
+    Układ 16:9
+    Ma być podobny (nie pixel w pixel)
+    Ma być responsywny (dostosowoywać się do wysokości przeglądarki)
+
+    ZŁOTE ZASADY
+    - Zrób tak jak potrafisz i tyle ile potrafisz
+    - Próbuj/testuj/sprawdzaj co by było. Takie próbowanie to najważniejsze cechy programisty
+    - Nie przeskakuj ćwiczenia. 
+ -->
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        .picture {
+            position: absolute;
+            top: calc(50% - 54vh/2);
+            left: calc(50% - 96vh/2);
+            background-color: rgb(206, 188, 171);
+            height: 54vh;
+            width: 96vh;
+            padding-top: 8vh;
+            overflow: hidden;
+            margin: auto;
+
+        }
+
+        img {
+            position: absolute;
+            width: 96vh;
+        }
+
+        .volcano {}
+
+        .mountain1 {
+            top: 17vh;
+        }
+
+        .mountain2 {
+            top: 24vh
+        }
+
+        .mountain3 {
+            top: 21vh;
+        }
+
+        .mountain4 {
+            top: 28vh
+        }
+
+        .mountain5 {
+            top: 42vh
+        }
+
+        .sun {
+            width: 8vh;
+            top: 4vh;
+            left: 10vh
+        }
+
+        .cloud1 {
+            width: 35vh;
+            left: -7vh;
+            top: 6.5vh;
+        }
+
+
+        .cloud2 {
+            width: 47vh;
+            right: 0vh;
+            top: 4.3vh;
+        }
+
+        .tree {
+            width: 35vh;
+            right: 0;
+            top: 15vh
+        }
+
+        .logo {
+            width: 6vh;
+            left: 9vh;
+            bottom: 10vh
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+        <img class="volcano" src="img/japan1.png" alt="">
+        <img class="mountain1" src="img/japan2.png" alt="">
+        <img class="mountain2" src="img/japan3.png" alt="">
+        <img class="mountain3" src="img/japan4.png" alt="">
+        <img class="mountain4" src="img/japan5.png" alt="">
+        <img class="mountain5" src="img/japan6.png" alt="">
+        <img class="sun" src="img/japan7.png" alt="">
+        <img class="cloud1" src="img/japan8.png" alt="">
+        <img class="cloud2" src="img/japan9.png" alt="">
+        <img class="tree" src="img/japan10.png" alt="">
+        <img class="logo" src="img/japan11.png" alt="">
+    </div>
+</body>
+
+</html>
