@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: roboto condensed, arial, sans-serif;
+}
+
+section {
+    margin: 150px 0;
+    overflow: hidden;
+}
+
+div {
+    width: 21%;
+    height: 20vh;
+    margin: 2%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+
+img {
+    display: block;
+    max-width: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+p {
+    text-align: center;
+    font-size: 40px;
+    font-family: arial;
+    line-height: 20vh;
+    background-color: darkcyan;
+    color: goldenrod
+}
+
+h1 {
+
+    text-align: center;
+    padding-top: 60px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+/* efekty */
+
+/* Blur - efekt 1 - piksele*/
+
+h1.blur:hover~div {
+    filter: blur(2px);
+}
+
+/* Brightness - efekt 2 - liczba lub procent */
+
+h1.brightness:hover~div {
+    filter: brightness(.2);
+}
+
+/* Contrast - efekt 3 - liczba lub procent */
+
+h1.contrast:hover~div {
+    filter: contrast(2);
+}
+
+/* Grayscale - efekt 4 - liczba lub procent - 100%/1 maks */
+
+h1.grayscale:hover~div {
+    filter: grayscale(50%);
+}
+
+/* Opacity - efekt 5 - liczba lub procent - 100%/1 bez przezroczystości */
+
+h1.opacity:hover~div {
+    filter: opacity(.5);
+}
+
+/* Hue-rotate - efekt 6 - kąt w stopniach (deg, turn,rad) */
+
+h1.hue-rotate:hover~div {
+    filter: hue-rotate(80deg);
+}
+
+/* Sepia - efekt 7 - od 0 do 1 (od 0 do 100%) */
+
+h1.sepia:hover~div {
+    filter: sepia(70%);
+}
+
+/* Invert - efekt 8 - od 0 do 1 (od 0 do 100%) */
+
+h1.invert:hover~div {
+    filter: invert(100%);
+}
+
+/* Saturate - efekt 9 - od 0 do góry  */
+
+h1.saturate:hover~div {
+    filter: saturate(1.6);
+}
+
+/* Łączenie filtrów - efekt 10  */
+
+h1.contrast-brightness:hover~div {
+    filter: contrast(.8) brightness(1.2) hue-rotate(50deg);
+}
