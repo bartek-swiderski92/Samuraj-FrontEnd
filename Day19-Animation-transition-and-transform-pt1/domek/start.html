@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        span {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: tomato;
+            padding: 20px;
+            font-size: 25px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .piece {
+            position: absolute;
+            top: 90%;
+            left: 10%;
+            width: 0;
+            height: 0;
+            background-color: brown;
+            transform: translate(-50%, -50%);
+            transition: 1s;
+
+        }
+
+        span:hover {
+            color: chocolate;
+            background-color: mediumseagreen;
+        }
+
+        span:hover~.piece.chimney {
+            top: calc(50% - 15vh);
+            left: calc(50% + 10vh);
+            width: 5vh;
+            height: 15vh;
+            background-color: #222;
+            transform: translate(-50%, -50%);
+            transition-delay: 0.5s;
+
+        }
+
+        span:hover~.piece.roof {
+            top: 50%;
+            left: 50%;
+            width: calc(45vh/1.41);
+            height: calc(45vh/1.41);
+            background-color: black;
+            transform: translate(-50%, -50%) rotate(45deg);
+            transition-delay: 0.3s;
+
+        }
+
+        span:hover~.piece.house {
+            top: calc(50% + 15vh);
+            left: 50%;
+            width: 45vh;
+            height: 30vh;
+            background-color: brown;
+            transform: translate(-50%, -50%);
+        }
+
+        span:hover~.piece.door {
+            top: calc(50% + 23vh);
+            left: 50%;
+            width: 10vh;
+            height: 14vh;
+            background-color: #333;
+            transform: translate(-50%, -50%);
+            transition-delay: 0.6s;
+
+        }
+
+        span:hover~.piece.window {
+            top: calc(50% + 15vh);
+
+            width: 8vh;
+            height: 10vh;
+            background-color: yellow;
+            transition-delay: 0.8s;
+
+        }
+
+        span:hover~.piece.window.left {
+            left: calc(50% - 12vh)
+        }
+
+        span:hover~.piece.window.right {
+            left: calc(50% + 12vh)
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div class="piece chimney"></div>
+    <div class="piece roof"></div>
+    <div class="piece house"></div>
+    <div class="piece door"></div>
+    <div class="piece window left"></div>
+    <div class="piece window right"></div>
+
+</body>
+
+</html>
