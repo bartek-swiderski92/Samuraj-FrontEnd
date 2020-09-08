@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* animation: move 10s 100 linear, color 2s infinite linear; */
+    }
+
+    @keyframes move {
+
+        100% {
+            margin-left: calc(100% - 200px)
+        }
+
+        /* 30% {
+            margin-left: calc(100% - 200px)
+        }
+
+        50% {
+            margin-left: calc(100% - 200px);
+        }
+
+        80% {
+            margin-left: 0;
+        }
+
+        100% {
+            margin-left: 0;
+
+        } */
+    }
+
+    @keyframes color {
+        0% {
+            background-color: red;
+        }
+
+        10% {
+            background-color: green;
+        }
+
+        50% {
+            background-color: red;
+        }
+
+        90% {
+            background-color: green;
+        }
+
+        100% {
+            background-color: red;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>
