@@ -2,23 +2,63 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <title>Document</title>
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-  crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
- <style>
- </style>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .arrow {
+            box-sizing: border-box;
+            position: relative;
+            top: calc(100% - 70px);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgb(80, 136, 226);
+            border: none;
+            border-radius: 50%;
+        }
+
+        .arrow i {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            color: white;
+            font-size: 40px;
+            animation: move 1s linear infinite;
+            text-shadow: 0 -15px 0 white, 0 15px 0 white;
+            ;
+        }
+
+        @keyframes move {
+            0% {
+                top: -50%
+            }
+
+            100% {
+                top: 120%
+            }
+        }
+    </style>
 </head>
 
 <body>
 
- <button class="arrow">
-  <i class="fas fa-angle-down"></i>
+    <button class="arrow">
+        <i class="fas fa-angle-down"></i>
 
- </button>
+    </button>
 </body>
 
 </html>
