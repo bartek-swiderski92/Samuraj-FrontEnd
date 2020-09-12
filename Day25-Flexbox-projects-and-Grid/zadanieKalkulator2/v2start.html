@@ -41,35 +41,40 @@
             flex-basis: 60%;
             min-width: 500px;
             flex-wrap: wrap;
-            height: 70vh;
+            height: 85vh;
+            justify-content: space-between;
+            align-content: space-between;
+
         }
 
         .result {
             height: 15vh;
             background-color: #000;
             flex-basis: 100%;
-            font-size: 80px;
+            font-size: 8vh;
             text-align: end;
             line-height: 15vh;
             padding-right: 6%;
         }
 
         .result~div {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            padding: 10px;
-            background-color: cadetblue;
-            flex-basis: 26%;
-            font-size: 50px;
-            flex-grow: 1;
             height: 10vh;
+            flex-basis: 30%;
+            font-size: 6vh;
+            background-color: cadetblue;
+            text-align: center;
+            line-height: 10vh;
             transition: .15s;
-            margin: 15px;
+            cursor: pointer;
+        }
+
+        div>div:nth-last-child(1),
+        div>div:nth-last-child(2) {
+            flex-basis: 45%;
         }
 
         .result~div:hover {
-            background-color: darkblue;
+            background-color: royalblue;
         }
     </style>
 </head>
