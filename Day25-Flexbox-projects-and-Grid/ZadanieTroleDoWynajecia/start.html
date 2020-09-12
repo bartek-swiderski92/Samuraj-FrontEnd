@@ -43,9 +43,6 @@
             background-color: #ccc;
             height: 800px;
             text-align: center;
-            align-items: center;
-            justify-content: flex-start;
-
         }
 
         section div.col h2 {
@@ -54,7 +51,7 @@
         }
 
         .col img {
-            width: 80%;
+            width: 100%;
             align-self: center;
         }
 
@@ -64,11 +61,20 @@
 
         p.price {
             align-self: center;
-            justify-self: self-end;
-            flex-grow: 0;
+            flex-grow: 1;
+            /* Kontener */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        p.price span {
+            display: block;
             background-color: #fff;
             border: 2px solid black;
             padding: 20px 50px;
+            margin-bottom: 40px;
+
         }
     </style>
 </head>
