@@ -11,11 +11,18 @@ let textSize = 16; //początkowa wielkość font-size dla p
 
 //3. Określenie akcji - napisanie funkcji
 function textIncrease() {
- // console.log("klik!");
- textSize++;
- text.style.fontSize = textSize + "px";
+    // console.log("klik!");
+    textSize++;
+    text.style.fontSize = textSize + "px";
+}
+
+function textDecrease() {
+    // console.log("klik!");
+    textSize--;
+    text.style.fontSize = textSize + "px";
 }
 
 //2. Ustawienie nasłuchiwania na przyciskach na kliknięcie.
 
 btnIncrease.addEventListener('click', textIncrease)
+btnDecrease.addEventListener('click', textDecrease)
