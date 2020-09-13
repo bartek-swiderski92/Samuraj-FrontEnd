@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-size: 70px;
+            text-align: center;
+            margin-top: 250px;
+        }
+
+        button {
+            padding: 10px 30px;
+            position: absolute;
+            top: 5vh;
+            left: 30vw
+        }
+
+        button+button {
+            left: 60vw
+        }
+    </style>
+</head>
+
+<body>
+    <button class="add">Dodaj</button>
+    <button class="remove">Odejmij</button>
+    <h1>Liczba Kliknięć: <span>0</span></h1>
+
+    <script>
+        const addBtn = document.querySelector('button.add');
+        const rmvBtn = document.querySelector('button.remove');
+        const counterSpan = document.querySelector('h1 span')
+        let counter = 0;
+
+        addBtn.addEventListener('click', function () {
+            counterSpan.textContent = ++counter;
+        });
+        rmvBtn.addEventListener('click', function () {
+            counterSpan.textContent = --counter;
+        })
+    </script>
+</body>
+
+</html>
