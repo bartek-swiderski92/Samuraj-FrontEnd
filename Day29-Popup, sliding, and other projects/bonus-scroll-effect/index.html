@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header></header>
+    <main></main>
+
+    <script>
+        const $doc = $(document);
+        const $header = $('header');
+        const $main = $('main');
+
+        $doc.on('scroll', function () {
+
+            const scrollPos = $doc.scrollTop();
+            const sectionOffset = $main.offset().top;
+
+            const headerHeight = $header.outerHeight();
+
+            $header.css({
+                // 'opacity': 1 - scrollPos / headerHeight,
+                'filter': 'grayscale(' + 1.5 * scrollPos / headerHeight + ')'
+
+            })
+        })
+    </script>
+</body>
+
+</html>
