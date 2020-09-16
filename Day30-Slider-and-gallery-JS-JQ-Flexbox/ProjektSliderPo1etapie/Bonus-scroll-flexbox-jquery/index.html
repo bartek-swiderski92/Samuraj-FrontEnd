@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Kropki</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 80%;
+            margin: 0 auto;
+            min-height: 50vh;
+        }
+
+        .s1 {
+            background-color: rgb(82, 43, 43);
+            height: 120vh;
+        }
+
+        .s2 {
+            background-color: rgb(24, 73, 44);
+            height: 80vh;
+
+        }
+
+        .s3 {
+            background-color: rgb(73, 58, 204)
+        }
+
+        .s4 {
+            background-color: rgb(58, 70, 31);
+            height: 140vh;
+        }
+
+        nav {
+            position: fixed;
+            top: 30%;
+            bottom: 30%;
+            left: 0;
+            width: 60px;
+        }
+
+        nav ul {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav li {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #000;
+        }
+
+        .dot1 {
+            background-color: rgb(82, 43, 43);
+        }
+
+        .dot2 {
+            background-color: rgb(24, 73, 44);
+        }
+
+        .dot3 {
+            background-color: rgb(73, 58, 204)
+        }
+
+        .dot4 {
+            background-color: rgb(58, 70, 31);
+        }
+
+        .active {
+            box-shadow: 0 0 0 3px white, 0 0 0 6px red;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="s1"></section>
+    <section class="s2"></section>
+    <section class="s3"></section>
+    <section class="s4"></section>
+    <nav>
+        <ul>
+            <li class="dot1"></li>
+            <li class="dot2"></li>
+            <li class="dot3"></li>
+            <li class="dot4"></li>
+        </ul>
+    </nav>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        function changeDot() {
+            const scrollValue = $(this).scrollTop();
+            const heightS2 = $('.s2').offset().top.toFixed()
+            const heightS3 = $('.s3').offset().top.toFixed()
+            const heightS4 = $('.s4').offset().top.toFixed()
+
+            // console.log(scrollValue, heightS2, heightS3, heightS4);
+            // $('nav li').removeClass('active')
+            if (scrollValue < heightS2) {
+                $('nav li').not('.dot1').removeClass('active');
+                $('.dot1').addClass('active');
+            } else if (scrollValue < heightS3) {
+                $('nav li').not('.dot2').removeClass('active');
+
+                $('.dot2').addClass('active')
+            } else if (scrollValue < heightS4) {
+                $('nav li').not('.dot3').removeClass('active');
+
+                $('.dot3').addClass('active')
+            } else {
+                $('nav li').not('.dot4').removeClass('active');
+
+                $('.dot4').addClass('active')
+
+            }
+        }
+
+        $(window).on("scroll", changeDot)
+    </script>
+</body>
+
+</html>
